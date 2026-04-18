@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BioStellar LLC — VTBT Forensic Evidence System</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #0a0a10; display: flex; justify-content: center; align-items: center; min-height: 100vh; font-family: Arial, sans-serif; }
+.card { max-width: 680px; width: 100%; padding: 8px; }
+
+@keyframes pulse-center {
+  0%,100%{r:28;opacity:1} 50%{r:34;opacity:.85}
+}
+@keyframes fade-in-up {
+  from{opacity:0;transform:translateY(8px)} to{opacity:1;transform:translateY(0)}
+}
+@keyframes beam {
+  0%{stroke-dashoffset:120;opacity:0} 30%{opacity:1} 100%{stroke-dashoffset:0;opacity:1}
+}
+@keyframes bar-grow {
+  from{width:0;opacity:0} to{opacity:1}
+}
+@keyframes score-count {
+  0%{opacity:0} 60%{opacity:0} 100%{opacity:1}
+}
+@keyframes tick-in {
+  0%,70%{opacity:0;transform:scale(0)} 80%{opacity:1;transform:scale(1.3)} 100%{opacity:1;transform:scale(1)}
+}
+@keyframes shimmer {
+  0%,100%{opacity:.15} 50%{opacity:.35}
+}
+@media (prefers-reduced-motion: no-preference) {
+  .center-pulse { animation: pulse-center 2.2s ease-in-out infinite; }
+  .ax1 { animation: fade-in-up .5s .4s ease both; }
+  .ax2 { animation: fade-in-up .5s .8s ease both; }
+  .ax3 { animation: fade-in-up .5s 1.2s ease both; }
+  .ax4 { animation: fade-in-up .5s 1.6s ease both; }
+  .beam1 { animation: beam .7s .5s ease-out both; }
+  .beam2 { animation: beam .7s .9s ease-out both; }
+  .beam3 { animation: beam .7s 1.3s ease-out both; }
+  .beam4 { animation: beam .7s 1.7s ease-out both; }
+  .bar1 { animation: bar-grow .6s .7s ease both; }
+  .bar2 { animation: bar-grow .6s 1.1s ease both; }
+  .bar3 { animation: bar-grow .6s 1.5s ease both; }
+  .bar4 { animation: bar-grow .6s 1.9s ease both; }
+  .score { animation: score-count .4s 2.3s ease both; }
+  .tick { animation: tick-in .4s 2.5s ease both; }
+  .shimmer { animation: shimmer 3s 2s ease-in-out infinite; }
+  .title-in { animation: fade-in-up .6s .1s ease both; }
+  .sub-in { animation: fade-in-up .6s .25s ease both; }
+}
+.ax1,.ax2,.ax3,.ax4,.score,.tick,.title-in,.sub-in { opacity:0; }
+</style>
+</head>
+<body>
+<div class="card">
+<svg width="100%" viewBox="0 0 680 440" xmlns="http://www.w3.org/2000/svg">
+
+<rect width="680" height="440" rx="16" fill="#0f1117"/>
+<rect class="shimmer" x="60" y="30" width="560" height="380" rx="12" fill="none" stroke="#ffffff" stroke-width="0.5"/>
+
+<text class="title-in" font-family="Arial,sans-serif" font-size="16" font-weight="bold" fill="#ffffff" x="340" y="52" text-anchor="middle">BioStellar LLC</text>
+<text class="sub-in" font-family="Arial,sans-serif" font-size="11" fill="#9999aa" x="340" y="70" text-anchor="middle">VTBT forensic evidence system — four-axis biological record</text>
+
+<circle class="center-pulse" cx="340" cy="210" r="28" fill="#D85A30" fill-opacity=".15" stroke="#D85A30" stroke-width="1.5"/>
+<circle cx="340" cy="210" r="18" fill="#D85A30" fill-opacity=".25"/>
+<text font-family="Arial,sans-serif" font-size="10" font-weight="bold" fill="#F0997B" x="340" y="207" text-anchor="middle">assault</text>
+<text font-family="Arial,sans-serif" font-size="9" fill="#F0997B" x="340" y="219" text-anchor="middle">event</text>
+
+<line class="beam1" x1="340" y1="192" x2="340" y2="150" stroke="#1D9E75" stroke-width="1.5" stroke-dasharray="42 42"/>
+<line class="beam2" x1="323" y1="196" x2="205" y2="160" stroke="#185FA5" stroke-width="1.5" stroke-dasharray="70 70"/>
+<line class="beam3" x1="357" y1="196" x2="475" y2="160" stroke="#BA7517" stroke-width="1.5" stroke-dasharray="70 70"/>
+<line class="beam4" x1="323" y1="224" x2="205" y2="260" stroke="#185FA5" stroke-width="1.5" stroke-dasharray="70 70"/>
+
+<g class="ax2">
+<rect x="262" y="116" width="156" height="32" rx="6" fill="#0a2a1e" stroke="#1D9E75" stroke-width="1"/>
+<text font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#5DCAA5" x="340" y="128" text-anchor="middle">Axis 2: epigenetic</text>
+<text font-family="Arial,sans-serif" font-size="10" fill="#1D9E75" x="340" y="142" text-anchor="middle">FKBP5 methylation · 30 days</text>
+</g>
+
+<g class="ax1">
+<rect x="90" y="132" width="152" height="32" rx="6" fill="#0a1a2e" stroke="#185FA5" stroke-width="1"/>
+<text font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#85B7EB" x="166" y="144" text-anchor="middle">Axis 1: catecholamine</text>
+<text font-family="Arial,sans-serif" font-size="10" fill="#378ADD" x="166" y="158" text-anchor="middle">NE · cortisol · CgA · 72 h</text>
+</g>
+
+<g class="ax3">
+<rect x="438" y="132" width="152" height="32" rx="6" fill="#2a1800" stroke="#BA7517" stroke-width="1"/>
+<text font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#EF9F27" x="514" y="144" text-anchor="middle">Axis 3: orexin depletion</text>
+<text font-family="Arial,sans-serif" font-size="10" fill="#BA7517" x="514" y="158" text-anchor="middle">CSF orexin-A · 6 h</text>
+</g>
+
+<g class="ax4">
+<rect x="90" y="232" width="152" height="32" rx="6" fill="#0a1a2e" stroke="#185FA5" stroke-width="1"/>
+<text font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#85B7EB" x="166" y="244" text-anchor="middle">Axis 4: enteric serotonin</text>
+<text font-family="Arial,sans-serif" font-size="10" fill="#378ADD" x="166" y="258" text-anchor="middle">5-HIAA · platelet 5-HT · 24 h</text>
+</g>
+
+<text font-family="Arial,sans-serif" font-size="10" fill="#555566" x="340" y="296" text-anchor="middle">evidence persistence</text>
+<rect x="100" y="305" width="480" height="6" rx="3" fill="#1a1a2a"/>
+<rect class="bar4" x="100" y="305" width="30" height="6" rx="3" fill="#BA7517"/>
+<rect class="bar1" x="100" y="305" width="96" height="6" rx="3" fill="#378ADD"/>
+<rect class="bar2" x="100" y="305" width="160" height="6" rx="3" fill="#1D9E75" fill-opacity=".6"/>
+<rect class="bar3" x="100" y="305" width="480" height="6" rx="3" fill="#534AB7" fill-opacity=".4"/>
+
+<text font-family="Arial,sans-serif" font-size="9" fill="#BA7517" x="130" y="321" text-anchor="middle">6h</text>
+<text font-family="Arial,sans-serif" font-size="9" fill="#378ADD" x="196" y="321" text-anchor="middle">72h</text>
+<text font-family="Arial,sans-serif" font-size="9" fill="#1D9E75" x="260" y="321" text-anchor="middle">7d</text>
+<text font-family="Arial,sans-serif" font-size="9" fill="#534AB7" x="580" y="321" text-anchor="middle">30d</text>
+
+<line x1="182" y1="298" x2="182" y2="315" stroke="#E24B4A" stroke-width="1" stroke-dasharray="2 2"/>
+<text font-family="Arial,sans-serif" font-size="8" fill="#E24B4A" x="183" y="328">toxicology</text>
+<text font-family="Arial,sans-serif" font-size="8" fill="#E24B4A" x="183" y="338">cutoff 7h</text>
+
+<rect class="score" x="240" y="350" width="200" height="46" rx="8" fill="#1a0a2a" stroke="#7F77DD" stroke-width="1"/>
+<text class="score" font-family="Arial,sans-serif" font-size="11" fill="#AFA9EC" x="340" y="368" text-anchor="middle">VTBT composite trauma score</text>
+<text class="score" font-family="Arial,sans-serif" font-size="10" fill="#7F77DD" x="340" y="384" text-anchor="middle">probable cause predicate</text>
+
+<g class="tick" transform="translate(458,368)">
+<circle cx="0" cy="0" r="10" fill="#0F6E56" stroke="#1D9E75" stroke-width="1"/>
+<path d="M-5 0 L-2 4 L6 -4" fill="none" stroke="#5DCAA5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+
+<text font-family="Arial,sans-serif" font-size="9" fill="#333344" x="340" y="422" text-anchor="middle">belindabailey.github.io  ·  biostellarllc.com  ·  USPTO Customer 224790</text>
+</svg>
+</div>
+</body>
+</html>
